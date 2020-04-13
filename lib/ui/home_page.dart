@@ -44,6 +44,24 @@ class _HomePageState extends State<HomePage> {
         ),
         centerTitle: true,
       ),
+      backgroundColor: Colors.black,
+      body: Column(
+        children: <Widget>[
+          Container(
+            padding: EdgeInsets.all(10),
+            child: TextField(
+              decoration: InputDecoration(
+                labelText: "Pesquisar Aqui!",
+                labelStyle: TextStyle(color: Colors.white),
+                border: OutlineInputBorder(
+                ),
+              ),
+              style: TextStyle(color: Colors.white, fontSize: 18),
+              textAlign: TextAlign.center,
+            ),
+          )
+        ],
+      ),
     );
   }
 }
